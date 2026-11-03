@@ -39,6 +39,11 @@ Det finns sex rubriknivåer, från `<h1>` till `<h6>` (heading 1–heading 6).
 <br>
 <a href="other.html">Skapa filen med namnet <code>other.html</code> i samma katalog och klicka på den här länken</a>
 ```
+
+Resultatet kan du se här:
+<iframe style="border: medium none currentcolor;" src="../../demo/html/common-text-elements.html" width="100%" height="450"></iframe>
+
+[Eller öppna som en separat sida](../../demo/html/common-text-elements.html)
 ^^^^
 
 ---
@@ -80,6 +85,10 @@ Man kan även visa tabeller med `<table>` som då har `<tr>` för rader och `<td
     </tr>
 </table>
 ```
+Resultatet kan du se här:
+<iframe style="border: medium none currentcolor;" src="../../demo/html/common-block-elements.html" width="100%" height="750"></iframe>
+
+[Eller öppna som en separat sida](../../demo/html/common-block-elements.html)
 ^^^^
 
 ---
@@ -109,6 +118,12 @@ Man kan även inkludera knappar med `<button>`.
     <button>Klicka på mig!</button>
 </form>
 ```
+
+^^^^Titta på hur det ser ut
+<iframe style="border: medium none currentcolor;" src="../../demo/html/common-forms.html" width="100%" height="200"></iframe>
+
+[Eller öppna som en separat sida](../../demo/html/common-forms.html)
+^^^^
 
 ---
 
