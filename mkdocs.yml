@@ -44,7 +44,7 @@ nav:
       - "Box-modellen": css/box-model.md
       - "Display: inline & block": css/inline-block.md
       - "Flexbox": css/flexbox.md
-#      - "Grid": css/grid
+      - "Grid": css/grid
   - "Utveckling pågår": schedule.md
 
 markdown_extensions:

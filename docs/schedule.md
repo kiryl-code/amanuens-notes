@@ -6,7 +6,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 |--------------------------------------------|------------------|
 | Utvecklarverktyg i webbläsare              | v. 46            |
 | **Fördjupning i CSS:**                     | v. 46            |
-| Grid                                       |                  |
 | Variabler i CSS                            |                  |
 | Font-face                                  |                  |
 | **Responsivitet och interaktion med CSS:** | v. 47            |
