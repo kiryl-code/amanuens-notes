@@ -1,0 +1,62 @@
+site_name: Amanuensanteckningar
+
+theme:
+  name: material
+  icon:
+    logo: material/code-braces
+  language: sv
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Byt till mörkt läge
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Byt till ljust läge
+
+nav:
+  - "Börja här": index.md
+  - "Verktyg & Tekniker (webbutveckling, frontend)":
+#      - "Terminal": tools-and-techniques/terminal.md
+#      - "Markdown": tools-and-techniques/markdown.md
+#      - "Versionshantering med git": tools-and-techniques/git.md
+      - "Utvecklingsmiljö": tools-and-techniques/tools.md
+      - "Emmet": tools-and-techniques/emmet.md
+      - "Att koppla externa filer": tools-and-techniques/linking-to-files.md
+      - "Att tänka i block": tools-and-techniques/block-thinking.md
+#      - "Utvecklarverktyg i webbläsare": "tools-and-techniques/developer-tools.md"
+  - "HTML":
+      - "HTML": html/html.md
+      - "HTML syntax": html/html-syntax.md
+      - "Struktur för ett HTML5 dokument": html/html-structure.md
+      - "Kodstil": html/html-code-style.md
+      - "De vanligaste HTML element": html/common-elements.md
+      - "Semantik": html/semantics.md
+      - "Tillgänglighet": html/accessibility.md
+  - "CSS":
+      - "CSS": css/css.md
+      - "Att koppla CSS till HTML": css/link-css.md
+      - "CSS selectors": css/css-selectors.md
+      - "Kodstil": css/css-codestyle.md
+      - "Box-modellen": css/box-model.md
+      - "Display: inline & block": css/inline-block.md
+      - "Flexbox": css/flexbox.md
+#      - "Grid": css/grid
+  - "Utveckling pågår": schedule.md
+
+markdown_extensions:
+  - markdown_extension
+  - fenced_code
+  - codehilite
+  - toc
+  - nl2br
+  - sane_lists
+  - tables
+  - footnotes
+
+extra_css:
+  - custom_styles.css
+  - darcula.css
