@@ -74,9 +74,9 @@ Nu finns det följande alternativ för hur vi kan placera elementen längs **huv
 | Placera elementen bredvid varandra med början från huvudaxelns slutkant                              | `flex-end`                 |
 
 ^^^^Kolla på hur det ser ut
-<iframe style="border: medium none currentcolor;" src="https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox/justify-content-demo.html" width="100%" height="850" name="flexbox-justify-content-demo" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy" allowfullscreen="allowfullscreen" scrolling="yes"></iframe>
+<iframe style="border: medium none currentcolor;" src="../../demo/flexbox/justify-content.html" width="100%" height="850" name="flexbox-justify-content-demo" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy" allowfullscreen="allowfullscreen" scrolling="yes"></iframe>
 
-[Klicka här för att öppna som en separat sida](https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox/justify-content-demo.html)
+[Klicka här för att öppna som en separat sida](../../demo/flexbox/justify-content.html)
 ^^^^
 
 ## `align-items`
@@ -94,9 +94,9 @@ Man kan även styra hur elementen placeras längs den sekundära axeln, alltså 
 (*) Det är viktigt att notera att det endast gäller för element med `height: auto;`. Har elementet ett fast höjd, till exempel `height: 25px;` kommer det inte påverkas.
 
 ^^^^Kolla på hur det ser ut
-<iframe style="border: medium none currentcolor;" src="https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox/align-items-demo.html" width="100%" height="900" name="flexbox-align-items-demo" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy" allowfullscreen="allowfullscreen" scrolling="yes"></iframe>
+<iframe style="border: medium none currentcolor;" src="../../demo/flexbox/align-items.html" width="100%" height="900" name="flexbox-align-items-demo" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy" allowfullscreen="allowfullscreen" scrolling="yes"></iframe>
 
-[Klicka här för att öppna som en separat sida](https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox/align-items-demo.html)
+[Klicka här för att öppna som en separat sida](../../demo/flexbox/align-items.html)
 ^^^^
 
 Man kan såklart kombinera `justify-content` med `align-items` för att bestämma hur elementen placeras både vertikalt och horisontellt.
@@ -150,7 +150,7 @@ div {
 }
 ```
 
-Klart! [Se resultatet här](https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox/center-a-div.html).
+Klart! [Se resultatet här](../../demo/flexbox/center-a-div.html).
 ^^^^
 
 ---
