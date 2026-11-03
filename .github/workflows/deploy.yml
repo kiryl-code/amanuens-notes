@@ -26,7 +26,6 @@ jobs:
           pip install mkdocs
           pip install mkdocs-material
           pip install -e .
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Build and Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        run: mkdocs production-site --force
