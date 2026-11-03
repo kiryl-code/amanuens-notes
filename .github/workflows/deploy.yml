@@ -28,4 +28,4 @@ jobs:
           pip install -e .
 
       - name: Build and Deploy to GitHub Pages
-        run: mkdocs production-site --force
+        run: mkdocs gh-deploy --remote-branch production-site --force
