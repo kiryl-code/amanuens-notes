@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+  <title>Flexbox demo (DV045G - webbutveckling med inriktning frontend)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    div, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+    }
+    h1 {
+      font-size: 18px;
+    }
+
+    h2 {
+      margin-top: 48px;
+      font-size: 16px;
+    }
+
+    code {
+      font-family: Melno,Consolas,monospace;
+      border-radius: 6px;
+      padding: 3px 12px;
+      color: #9f4511;
+      background-color: #f2f4f4;
+      border: 1px solid #e8eaec;
+    }
+
+    .no-margin-top {
+      margin-top: 0 !important;
+    }
+
+    .rectangle {
+      width: 100px;
+      height: 50px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .flex-container {
+      display: flex;
+      width: 100%;
+      height: 200px;
+      border: 1px solid black;
+    }
+    https://studenter.miun.se/~kiya2400/dv045g/course_material/flexbox-align-items-demo/align-items-demo.html
+    .flex-start {
+      align-items: flex-start;
+    }
+
+    .flex-center {
+      align-items: center;
+    }
+
+    .flex-end {
+      align-items: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <h1>Se hur olika flexbox egenskaper fungerar i praktitken - <code>align-items</code></h1>
+  <h2 class="no-margin-top"><code>align-items: flex-start</code></h2>
+  <div class="flex-container flex-start">
+    <div class="rectangle red"></div>
+    <div class="rectangle green"></div>
+    <div class="rectangle blue"></div>
+  </div>
+  <h2><code>align-items: center</code></h2>
+  <div class="flex-container flex-center">
+    <div class="rectangle red"></div>
+    <div class="rectangle green"></div>
+    <div class="rectangle blue"></div>
+  </div>
+  <h2><code>align-items: flex-end</code></h2>
+  <div class="flex-container flex-end">
+    <div class="rectangle red"></div>
+    <div class="rectangle green"></div>
+    <div class="rectangle blue"></div>
+  </div>
+</body>
+</html>
