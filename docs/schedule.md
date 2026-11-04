@@ -5,9 +5,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Modul/moment/koncept                       | Preliminär vecka |
 |--------------------------------------------|------------------|
 | Utvecklarverktyg i webbläsare              | v. 46            |
-| **Fördjupning i CSS:**                     | v. 46            |
-| Variabler i CSS                            |                  |
-| Font-face                                  |                  |
 | **Responsivitet och interaktion med CSS:** | v. 47            |
 | Responsivitet och responsive design        |                  |
 | Relativa enheter                           |                  |

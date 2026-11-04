@@ -50,6 +50,7 @@ nav:
         - "Flexbox": css/flexbox.md
         - "Grid": css/grid.md
         - "Variabler i CSS": css/variables.md
+        - "Font-face": css/font-face.md
 
 markdown_extensions:
   - markdown_extension
