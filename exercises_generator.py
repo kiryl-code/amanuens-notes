@@ -63,6 +63,12 @@ def parse_yaml_to_template_data(yaml_content, filename):
         else:
             correct_answer = str(raw_correct) if raw_correct else ""
 
+        if q_type == "selectExercise" and not correct_answer:
+            for alt in alternatives:
+                if alt["correct"]:
+                    correct_answer = alt["text"]
+                    break
+
         questions_data.append({
             "type": q_type,
             "radio": q.get("radio", False),
@@ -78,6 +84,7 @@ def parse_yaml_to_template_data(yaml_content, filename):
         "title": title,
         "questions": questions_data
     }
+
 
 
 def process_file(source_path, env):
