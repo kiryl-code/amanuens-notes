@@ -1,0 +1,64 @@
+title: "HTML syntax"
+questions:
+  - type: "answerAlternativeExercise"
+    radio: false
+    question: "Vilka av följande alternativ är öppnande taggar i HTML?"
+    alternatives:
+      - "`<a>`":
+          correct: true
+      - "`</p>`":
+          correct: false
+      - "`<span/>`":
+          correct: false
+      - "`<div>`":
+          correct: true
+      - "`<html>`":
+          correct: true
+    correct_explanation: "Helt rätt, syntax för öppnande taggar följer formatet `<body>`"
+    incorrect_explanation: "Tänk på att ett par av öppnande och stängande taggar ser ut så här: `<form></form>`. Glöm inte at du ska välja alla korrekta alternativ."
+  - type: "answerAlternativeExercise"
+    radio: true
+    question: "Vilket av följande alternativ är ett korrekt exempel på en stängande tagg i HTML?"
+    alternatives:
+      - "`<button>`":
+          correct: false
+      - "`<button/>`":
+          correct: false
+      - "`</button>`":
+          correct: true
+      - "`</button/>`":
+          correct: false
+    correct_explanation: "Bra jobbat! Stängande taggar ser ut som `</html>`!"
+    incorrect_explanation: "Det är nära, men inte helt rätt. Försök igen!"
+  - type: "answerAlternativeExercise"
+    radio: false
+    question: "Välj alla korrekta alternativ för void taggar i HTML"
+    alternatives:
+      - "`<br/>`":
+          correct: true
+      - "`<hr>`":
+          correct: true
+      - "`</img>`":
+          correct: false
+      - "`</input/>`":
+          correct: false
+    correct_explanation: "Det är korrekt, men tänk på att man ska föredra att skriva `<br>` istället för `<br/>`."
+    incorrect_explanation: "Inte riktigt. Glöm inte att välja alla korrekta alternativ."
+  - type: "answerAlternativeExercise"
+    radio: false
+    question: "Vilka av följande är exempel på korret attribut i HTML?"
+    alternatives:
+      - "`<input type='text' placeholder='Enter text here'>`":
+          correct: true
+      - '`<p style: "color=red">`':
+          correct: false
+      - '`<button disabled>`':
+          correct: true
+      - '`<a href="https://www.google.com">`':
+          correct: true
+      - '`<option value: 1 selected>`':
+          correct: false
+      - '`<div id: uniqueId, class: redBg>`':
+          correct: false
+    correct_explanation: Bra jobbat! Det är helt korrekt att attribut skrivs som `nyckel="värde"`, separeras med ett mellanslag och att det inte spelar någon roll om man använder enkla eller dubbla citattecken.
+    incorrect_explanation: Tänk på att attribut oftast skrivs som ett nyckel-värde par, men det kan också finnas attribut som inte kräver något värde. Tänk också på vilket HTML-syntax används för att skriva attribut. Glöm inte att välja alla korrekta alternativ.

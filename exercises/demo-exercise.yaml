@@ -1,0 +1,12 @@
+title: "Exempelquiz"
+questions:
+  - type: "answerAlternativeExercise"
+    radio: true
+    question: Välj det korrekta alternativet och tryck sedan på "Kontrollera"
+    alternatives:
+      - "Korrekt alternativ":
+          correct: true
+      - "Fel alternativ":
+          correct: false
+    correct_explanation: "Du fattar hur det funkar. Bra! 😎"
+    incorrect_explanation: "Du skulle ju välja ett korrekt alternativ... 🫤"
