@@ -25,7 +25,12 @@ jobs:
         run: |
           pip install mkdocs
           pip install mkdocs-material
+          pip install pyyaml
+          pip install jinja2
           pip install -e .
+
+      - name: Build exercises
+        run: python3 exercises_generator.py
 
       - name: Build and Deploy to GitHub Pages
         run: mkdocs gh-deploy --remote-branch production-site --force
