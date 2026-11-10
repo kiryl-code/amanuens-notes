@@ -13,17 +13,27 @@
         <div class="question-body">
             {{ q.question | md }}
         </div>
-        {% for alt in q.alternatives %}
-        <div class="alternative">
-            <input
-                type="{{ 'radio' if q.radio else 'checkbox' }}"
-                name="{{ q.name if q.radio else '' }}"
-                id="{{ alt.id }}"
-                class="answer{{ ' correct' if alt.correct else '' }}"
-            >
-            <label for="{{ alt.id }}">{{ alt.text | md_inline }}</label>
-        </div>
-        {% endfor %}
+        {% if q.type == 'selectExercise' %}
+          <select class="answer" data-correct="{{ q.correct_answer }}">
+            <option value="">-- Välj svar --</option>
+            {% for alt in q.alternatives %}
+              <option value="{{ alt.text }}">{{ alt.text }}</option>
+            {% endfor %}
+          </select>
+
+        {% elif q.type == 'textInputExercise' %}
+          <input type="text" class="answer" data-correct="{{ q.correct_answer }}">
+        {% else %}
+          {% for alt in q.alternatives %}
+            <label for="{{ alt.id }}">
+              <input type="{% if q.radio %}radio{% else %}checkbox{% endif %}"
+                     id="{{ alt.id }}"
+                     name="{{ q.name }}"
+                     class="answer {% if alt.correct %}correct{% endif %}">
+              {{ alt.text | md_inline }}
+            </label>
+          {% endfor %}
+        {% endif %}
         <div class="explanations">
             <p class="resultCorrect hidden">Korrekt!</p>
             <p class="resultIncorrect hidden">Inte riktigt...</p>
