@@ -1,0 +1,72 @@
+code {
+    color: #9f4511 !important;
+}
+
+.cm {
+    color: #999 !important;
+}
+
+.codehilite pre {
+    overflow-x: auto;
+}
+
+summary {
+    max-width: 100%  !important;
+    background: var(--md-primary-fg-color)  !important;
+    color: #fff  !important;
+    padding: 0.4em 1em   !important;
+    border-radius: 6px 6px 0 0  !important;
+}
+
+details {
+    max-width: 100%  !important;
+    margin-bottom: 5px  !important;
+    border: none !important;
+    outline: none !important;
+    font-size: .8rem !important;
+    padding: 0 !important;
+}
+
+summary::before {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+details[open] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-typeset .admonition-title, .md-typeset summary {
+    margin: 0 !important;
+}
+
+.collapsible-content {
+    max-width: 100% !important;
+    padding: 1em 2em  !important;
+    border: 0.5px solid #999  !important;
+    border-radius: 0 0 6px 6px  !important;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: .8rem !important;
+}
+
+table th {
+    background: var(--md-primary-fg-color);
+    color: #fff;
+}
+
+th {
+    text-align: center !important;
+    align-content: center !important;
+}
+
+.side-block {
+    padding: 0px 1em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    border-left: 0.5em solid;
+}

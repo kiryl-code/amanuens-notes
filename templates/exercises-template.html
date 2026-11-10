@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <script src="{{ root_prefix }}engine/main.js" type="module"></script>
+    <link rel="stylesheet" href="{{ root_prefix }}engine/styles/main.css">
+    <link rel="stylesheet" href="{{ root_prefix }}engine/styles/custom_styles.css">
+</head>
+<body>
+    {% for q in questions %}
+    <form action="" data-exercise-type="{{ q.type }}">
+        <div class="question-body">
+            {{ q.question | md }}
+        </div>
+        {% for alt in q.alternatives %}
+        <div class="alternative">
+            <input
+                type="{{ 'radio' if q.radio else 'checkbox' }}"
+                name="{{ q.name if q.radio else '' }}"
+                id="{{ alt.id }}"
+                class="answer{{ ' correct' if alt.correct else '' }}"
+            >
+            <label for="{{ alt.id }}">{{ alt.text | md_inline }}</label>
+        </div>
+        {% endfor %}
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            {% if q.correct_explanation %}
+            <div class="explanationCorrect hidden">
+                {{ q.correct_explanation | md }}
+            </div>
+            {% endif %}
+            {% if q.incorrect_explanation %}
+            <div class="explanationIncorrect hidden">
+                {{ q.incorrect_explanation | md }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    {% if not loop.last %}<hr>{% endif %}
+    {% endfor %}
+</body>
+</html>
