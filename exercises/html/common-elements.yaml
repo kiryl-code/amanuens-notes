@@ -1,0 +1,105 @@
+# yaml-language-server: $schema=../schema.json
+
+title: De vanligaste HTML-elementen
+questions:
+  - type: textInputExercise
+    question: Vilket HTML-element används för ett textstycke?
+    correct_answer:
+      - <p>
+      - p
+      - </p>
+      - <p></p>
+      - paragraph
+    correct_explanation: "För textstycke använder man `<p>` som står för *paragraph*."
+    incorrect_explanation: "Tips: i HTML brukar förkortningar användas. Textstycket är samma sak som en *paragraph*."
+  - type: textInputExercise
+    question: Vilket HTML-element används för en rubrik på nivå 3?
+    correct_answer:
+      - <h3>
+      - h3
+      - </h3>
+      - <h3></h3>
+    correct_explanation: "För en rubrik på nivå 3 använder man `<h3>`, vilket står för *heading 3*"
+    incorrect_explanation: "Tips: i HTML brukar förkortningar användas. Rubrik är samma sak som en *heading*. Tänk på att det inte ska finnas något mellanslag inuti elementnamnet"
+  - type: textInputExercise
+    question: Vilket element används för en punktlista?
+    correct_answer:
+      - <ul>
+      - ul
+      - </ul>
+      - <ul></ul>
+    correct_explanation: "Helt rätt, det är `<ul>` som används för punktlistor! Förkortningen står för *unordered list*"
+    incorrect_explanation: "Tänk på att en punktlista är en *unordered list*"
+  - type: textInputExercise
+    question: Vilket element används för en numrerad lista?
+    correct_answer:
+      - <ol>
+      - ol
+      - </ol>
+      - <ol></ol>
+    correct_explanation: "Du har det! `<ol>` betyder *ordered list* och representerar en numrerad lista"
+    incorrect_explanation: "Tänk på att en numrerad lista är en *ordered list*"
+  - type: textInputExercise
+    question: Vilket element används för en bild?
+    correct_answer:
+      - <img>
+      - img
+      - <img/>
+    correct_explanation: "Precis, det är `<img>` som används för bilder. Förkortningen står för *image*"
+    incorrect_explanation: "En bild är en *image*. Tänk också på att detta är ett void-element"
+  - type: textInputExercise
+    question: Vilket element används för länkar?
+    correct_answer:
+      - <a>
+      - a
+      - </a>
+      - <a></a>
+    correct_explanation: "Yes! `<a>` står för *anchor*"
+    incorrect_explanation: "Det fullständiga namnet är *anchor*"
+  - type: textInputExercise
+    question: Vilket element används för att representera en punkt i en lista?
+    correct_answer:
+      - <li>
+      - li
+      - </li>
+      - <li></li>
+    correct_explanation: "Du har helt rätt, `<li>` står för *list item*"
+    incorrect_explanation: "Tips: det heter *list item* på engelska"
+  - type: textInputExercise
+    question: Vilket element används för en radbrytning?
+    correct_answer:
+      - <br>
+      - br
+      - <br/>
+    correct_explanation: "*Break* eller `<br>`. Du har koll på det!"
+    incorrect_explanation: "På engelska heter det *break*"
+  - type: selectExercise
+    question: Vilka element används i tabeller?
+    alternatives:
+      - "<textarea>, <fieldset>, <input>, <label>, <button>"
+      - "<div>, <span>"
+      - "<thead>, <th>, <tr>, <td>":
+          correct: true
+      - "<header>, <footer>, <nav>, <article>, <section>, <aside>"
+    correct_explanation: "Japp!"
+    incorrect_explanation: "Tabellen kan bestå av rader och celler. Man kan även ha en rubrik-rad"
+  - type: selectExercise
+    question: Vilka element används för att ange sidans struktur, till exempel sidhuvud, navigationsmeny, sidfot och liknande?
+    alternatives:
+      - "<textarea>, <fieldset>, <input>, <label>, <button>"
+      - "<div>, <span>"
+      - "<thead>, <th>, <tr>, <td>"
+      - "<header>, <footer>, <nav>, <article>, <section>, <aside>":
+          correct: true
+    correct_explanation: "Helt rätt! `<div>` kan också användas, men i HTML5 ska man föredra semantiska element"
+    incorrect_explanation: "Tänk på vilka HTML5 element har semantisk betydelse som passar beskrivningen"
+  - type: selectExercise
+    question: Vilka element kan användas i en formulär?
+    alternatives:
+      - "<textarea>, <fieldset>, <input>, <label>, <button>":
+          correct: true
+      - "<div>, <span>"
+      - "<thead>, <th>, <tr>, <td>"
+      - "<textarea>, <fieldset>, <input>, <label>, <button>"
+    correct_explanation: "Helt rätt! I formuläret kan man använda en massa olika element för att gruppera, skapa och namnge olika fält"
+    incorrect_explanation: "Tänk på vilka element kan användas för att ta in användarinmatning och vilka element kan användas för att gruppera eller namnge sådana fält"
