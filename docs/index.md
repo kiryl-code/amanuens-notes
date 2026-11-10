@@ -39,3 +39,9 @@ Ibland får mina kodexempel inte plats så scrolla gärna horisontellt inuti kod
 ```python
 print('\n'.join([''.join(['PROGRAMMERING'[(x - y) % 6] if ((x * 0.05)**2 + (y * 0.1)**2 - 1)**3 - (x * 0.05)**2 * (y * 0.1)**3 <= 0 else ' ' for x in range(-30, 30)]) for y in range(15, -15, -1)]))
 ```
+
+### Quiz
+
+På vissa sidor kan du hitta ett litet quiz där du kan testa dina kunskaper. Testa hur det funkar:
+
+<iframe style="border: medium none currentcolor;" src="../../exercises/demo-exercise.html" width="100%" height="280px"></iframe>

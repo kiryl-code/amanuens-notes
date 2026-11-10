@@ -54,3 +54,11 @@ Principen är enkel. I den öppnande taggen (eller i den enda taggen för själv
 ## Externa resurser
 
 > [HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) `MDN`
+
+---
+
+## Quiz
+
+Ta ett snabbt quiz för att testa dina kunskaper! [Eller öppna som en separat sida](../../exercises/html/html-syntax.html)
+
+<iframe style="border: medium none currentcolor;" src="../../exercises/html/html-syntax.html" width="100%" height="500px"></iframe>
