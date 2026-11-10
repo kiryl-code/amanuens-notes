@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exercise Schema",
+  "type": "object",
+  "required": ["title", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exercise's title or name"
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/question" }
+    }
+  },
+  "definitions": {
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "question", "correct_explanation", "incorrect_explanation"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["answerAlternativeExercise", "selectExercise", "textInputExercise"],
+          "description": "Type of quiz question"
+        },
+        "question": { "type": "string", "minLength": 1 },
+        "radio": { "type": "boolean", "default": false },
+        "correct_explanation": { "type": "string", "minLength": 1 },
+        "incorrect_explanation": { "type": "string", "minLength": 1 },
+        "correct_answer": {
+          "oneOf": [
+            { "type": "string", "minLength": 1 },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 }
+            }
+          ]
+        },
+        "alternatives": { "$ref": "#/definitions/alternatives" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "answerAlternativeExercise" } } },
+          "then": {
+            "required": ["alternatives"],
+            "properties": {
+              "correct_answer": false
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "selectExercise" } } },
+          "then": {
+            "required": ["alternatives", "correct_answer"],
+            "properties": {
+              "radio": false
+            }
+          }
+        },
+        {
+          "if": { "properties": { "type": { "const": "textInputExercise" } } },
+          "then": {
+            "required": ["correct_answer"],
+            "properties": {
+              "alternatives": false,
+              "radio": false
+            }
+          }
+        }
+      ]
+    },
+    "alternatives": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["text"],
+            "properties": {
+              "text": { "type": "string" },
+              "correct": { "type": "boolean", "default": false }
+            }
+          },
+          {
+            "type": "object",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "additionalProperties": {
+              "oneOf": [
+                { "type": "boolean" },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "correct": { "type": "boolean", "default": false }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
