@@ -3,3 +3,6 @@ build/
 .venv/
 
 __pycache__/
+
+docs/exercises/*
+!docs/exercises/engine/
