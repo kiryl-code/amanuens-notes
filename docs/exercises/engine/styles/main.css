@@ -132,8 +132,8 @@ code {
 }
 
 .explanations code {
-    background-color: #555555;
+    background-color: rgba(217, 217, 217, 0.2);
     border-radius: 8px;
     padding: 0 0.4rem;
-    color: #eeeeee !important;
+    color: #ffffff !important;
 }
