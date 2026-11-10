@@ -152,3 +152,11 @@ Då kommer det inte att spela någon roll att ett `<a>`-element har klassen `yel
 > [Introduction to CSS syntax: declarations, rulesets, and statements](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Syntax/Introduction) `MDN`  
 > [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties) `MDN`  
 > [Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity) `MDN`  
+
+---
+
+## Quiz
+
+Testa dina kunskaper om du vill! [Eller öppna som en separat sida](../../exercises/css/selectors.html)
+
+<iframe style="border: medium none currentcolor;" src="../../exercises/css/selectors.html" width="100%" height="600"></iframe>

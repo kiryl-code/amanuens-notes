@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=../schema.json
+
+title: CSS selectors
+questions:
+  - type: answerAlternativeExercise
+    question: Vilket av följande är en CSS-selektor för ett element med id "example"?
+    radio: true
+    alternatives:
+      - "`example`"
+      - "`.example`"
+      - "`> example`"
+      - "`:example`"
+      - "`#example`":
+          correct: true
+    correct_explanation: Ja, för att välja ett element via dess ID skriver man `#<id>`.
+    incorrect_explanation: Det här alternativet är felaktigt.
+  - type: textInputExercise
+    question: Hur väljer man alla `<img>`?
+    correct_answer: "img"
+    correct_explanation: Precis, det är bara att skriva elementets namn!
+    incorrect_explanation: För att välja alla element av en viss typ räcker det med att ange namn.
+  - type: answerAlternativeExercise
+    question: Vilka av följande alternativ är exempel på klass-selektor?
+    radio: false
+    alternatives:
+      - "`example`"
+      - "`.example`":
+          correct: true
+      - "`.fw-b`":
+          correct: true
+      - "`#example`"
+      - "`h1`"
+      - "`.h1`":
+          correct: true
+      - "`#h1`"
+    correct_explanation: "Helt rätt, när man väljer element via dess klass skriver man `.<klass>`"
+    incorrect_explanation: "Glöm inte att välja alla korrekta alternativ"
