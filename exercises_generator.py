@@ -86,7 +86,6 @@ def parse_yaml_to_template_data(yaml_content, filename):
     }
 
 
-
 def process_file(source_path, env):
     try:
         with source_path.open(encoding="utf-8") as file:

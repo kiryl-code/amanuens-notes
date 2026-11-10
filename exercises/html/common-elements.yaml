@@ -100,6 +100,6 @@ questions:
           correct: true
       - "<div>, <span>"
       - "<thead>, <th>, <tr>, <td>"
-      - "<textarea>, <fieldset>, <input>, <label>, <button>"
+      - "<header>, <footer>, <nav>, <article>, <section>, <aside>"
     correct_explanation: "Helt rätt! I formuläret kan man använda en massa olika element för att gruppera, skapa och namnge olika fält"
     incorrect_explanation: "Tänk på vilka element kan användas för att ta in användarinmatning och vilka element kan användas för att gruppera eller namnge sådana fält"

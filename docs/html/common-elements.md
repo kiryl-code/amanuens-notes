@@ -137,3 +137,12 @@ Det finns en del generiska element som fungerar som behållare, till exempel `<d
 
 > [HTML Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements) `MDN`  
 > [HTML Forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms) `MDN`  
+
+---
+
+## Quiz
+
+Ta ett quiz om du vill testa dina kunskaper! [Eller öppna som en separat sida](../../exercises/html/common-elements.html)
+
+<iframe style="border: medium none currentcolor;" src="../../exercises/html/common-elements.html" width="100%" height="600"></iframe>
+
