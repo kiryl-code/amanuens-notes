@@ -38,6 +38,10 @@ input[type="text"] {
     font-size: 1rem;
 }
 
+.question-body {
+    width: 100%;
+}
+
 .alternative {
     display: flex;
     align-items: center;
@@ -91,6 +95,7 @@ select {
 
 .resultCorrect, .resultIncorrect {
     font-weight: bold;
+    color: #000000;
 }
 
 hr {
@@ -104,9 +109,31 @@ code {
     background-color: #f2f4f4;
 }
 
+.codehilite {
+    margin-top: 1rem;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.codehilite code {
+    background: none;
+}
+
+.codehilite span {
+    font-family: Melno,Consolas,monospace;
+}
+
 .explanations {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
+    color: #ffffff;
+}
+
+.explanations code {
+    background-color: #555555;
+    border-radius: 8px;
+    padding: 0 0.4rem;
+    color: #eeeeee !important;
 }

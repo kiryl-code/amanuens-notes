@@ -101,6 +101,7 @@ def process_file(source_path, env):
     output_path = OUTPUT_DIR / rel_path.with_suffix(".html")
 
     data["root_prefix"] = "../" * (len(rel_path.parts) - 1)
+    data["common_styles_prefix"] = "../" * len(rel_path.parts)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     html_output = template.render(data)

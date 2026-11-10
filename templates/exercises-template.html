@@ -5,7 +5,8 @@
     <title>{{ title }}</title>
     <script src="{{ root_prefix }}engine/main.js" type="module"></script>
     <link rel="stylesheet" href="{{ root_prefix }}engine/styles/main.css">
-    <link rel="stylesheet" href="{{ root_prefix }}engine/styles/custom_styles.css">
+    <link rel="stylesheet" href="{{ common_styles_prefix }}custom_styles.css">
+    <link rel="stylesheet" href="{{ common_styles_prefix }}darcula.css">
 </head>
 <body>
     {% for q in questions %}
