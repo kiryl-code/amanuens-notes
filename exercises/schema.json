@@ -56,7 +56,7 @@
         {
           "if": { "properties": { "type": { "const": "selectExercise" } } },
           "then": {
-            "required": ["alternatives", "correct_answer"],
+            "required": ["alternatives"],
             "properties": {
               "radio": false
             }

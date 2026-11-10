@@ -3,7 +3,7 @@ from pathlib import Path
 
 import markdown
 import yaml
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent
@@ -35,31 +35,33 @@ def parse_yaml_to_template_data(yaml_content, filename):
         q_type = q.get("type", "answerAlternativeExercise")
         alternatives = []
 
-        raw_correct = q.get("correct_answer", "")
-        if isinstance(raw_correct, list):
-            correct_answer = "|".join(str(item).strip().lower() for item in raw_correct)
-        else:
-            correct_answer = str(raw_correct).strip().lower()
-
         for a_idx, alt in enumerate(q.get("alternatives", []), start=1):
             if isinstance(alt, dict) and "text" in alt:
                 alt_text = alt["text"]
                 is_correct = alt.get("correct", False)
             elif isinstance(alt, dict):
                 alt_text, props = next(iter(alt.items()))
-                is_correct = props.get("correct", False) if isinstance(props, dict) else False
+                if isinstance(props, bool):
+                    is_correct = props
+                elif isinstance(props, dict):
+                    is_correct = props.get("correct", False)
+                else:
+                    is_correct = False
             else:
                 alt_text = str(alt)
                 is_correct = False
 
-            if is_correct and not correct_answer:
-                correct_answer = alt_text
-
             alternatives.append({
                 "id": f"q{q_idx}_answer{a_idx}",
-                "text": alt_text,
+                "text": str(alt_text),
                 "correct": is_correct
             })
+
+        raw_correct = q.get("correct_answer", "")
+        if isinstance(raw_correct, list):
+            correct_answer = "|".join(str(item) for item in raw_correct)
+        else:
+            correct_answer = str(raw_correct) if raw_correct else ""
 
         questions_data.append({
             "type": q_type,
@@ -106,7 +108,10 @@ def main():
         print(f"Could not find {SOURCE_DIR} or {TEMPLATE_DIR}", file=sys.stderr)
         sys.exit(1)
 
-    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
+    env = Environment(
+        loader=FileSystemLoader(TEMPLATE_DIR),
+        autoescape=select_autoescape(["html", "xml"])
+    )
     env.filters["md"] = lambda text: render_markdown(text, inline=False)
     env.filters["md_inline"] = lambda text: render_markdown(text, inline=True)
 

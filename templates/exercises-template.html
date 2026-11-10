@@ -15,7 +15,7 @@
         </div>
         {% if q.type == 'selectExercise' %}
           <select class="answer" data-correct="{{ q.correct_answer }}">
-            <option value="">-- Välj svar --</option>
+            <option value="">Välj svar</option>
             {% for alt in q.alternatives %}
               <option value="{{ alt.text }}">{{ alt.text }}</option>
             {% endfor %}
@@ -25,13 +25,15 @@
           <input type="text" class="answer" data-correct="{{ q.correct_answer }}">
         {% else %}
           {% for alt in q.alternatives %}
-            <label for="{{ alt.id }}">
-              <input type="{% if q.radio %}radio{% else %}checkbox{% endif %}"
-                     id="{{ alt.id }}"
-                     name="{{ q.name }}"
-                     class="answer {% if alt.correct %}correct{% endif %}">
-              {{ alt.text | md_inline }}
-            </label>
+            <div class="alternative">
+                <label for="{{ alt.id }}">
+                  <input type="{% if q.radio %}radio{% else %}checkbox{% endif %}"
+                         id="{{ alt.id }}"
+                         name="{{ q.name }}"
+                         class="answer {% if alt.correct %}correct{% endif %}">
+                  {{ alt.text | md_inline }}
+                </label>
+            </div>
           {% endfor %}
         {% endif %}
         <div class="explanations">
