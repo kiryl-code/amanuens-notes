@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=../schema.json
+
+title: Emmet
+questions:
+  - type: answerAlternativeExercise
+    radio: false
+    question: |
+      Hur kan man skapa följande struktur med emmet?
+      ```html
+      <div class="container">
+        <a href=""></a>
+        <a href=""></a>
+        <p></p>
+      </div>
+      ```
+    alternatives:
+      - "`div>a>p`"
+      - "`.container>a*2>p`"
+      - '`div.container>a*2+p`':
+          correct: true
+      - "`#container>a*2>p`"
+      - "`div.container>a*2>p`"
+      - "`div>a+p`"
+      - "`#container>a*2+p`"
+      - "`.container>a*2+p`":
+           correct: true
+    correct_explanation: Ja! När man inte anger elementet, men skriver vilken klass eller vilket id det ska ha kommer emmet att skapa ett `<div>`. Det betyder att `.container` och `div.container` kommer att ge samma resultat. Vi använder också `+p`, eftersom `<a>` och `<p>` ska vara på samma djup.
+    incorrect_explanation: Tänk på att `<a>` och `<p>` är på samma nivå. Tänk också på vad är klasselektor och om man behöver ange element + klassnamn eller räcker det med klassnamnet. Kan båda alternativ vara korrekta? Välj alla svar som du tycker är korrekta.
+  - type: textInputExercise
+    question: |
+      Skriv emmet-förkortning för följande struktur:
+      ```html
+      <header>
+        <nav>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </nav>
+        <h1></h1>
+        <p></p>
+        <button></button>
+      </header>
+      ```
+    correct_answer: header>nav>a*3^h1+p+button
+    correct_explanation: Bra jobbat!
+    incorrect_explanation: "Tänk så här: först skapar vi `<header>`, inuti den ska det finnas ett `<nav>`. Vilket tecken använder man för att skriva \"inuti\" med emmet? Samma sak med tre länkar. Tänk på vilket tecken som används för att skapa flera sådana element. Sist, använd ett tecken för att gå ett steg tillbaka i djupet och lägga till `<h1>`, `<p>` och `<button>`."

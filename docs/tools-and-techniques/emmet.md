@@ -105,3 +105,11 @@ Principen här är att man använder de första bokstäverna i en egenskap och d
 > [Emmet](https://www.emmet.io/) `Emmet`  
 > [Emmet cheat sheet](https://docs.emmet.io/cheat-sheet/) `Emmet`
 
+---
+
+## Quiz
+
+Testa dina kunskaper! [Öppna som en separat sida](../../exercises/tools-and-techniques/emmet.html)
+
+<iframe style="border: medium none currentcolor;" src="../../exercises/tools-and-techniques/emmet.html" width="100%" height="600px"></iframe>
+
