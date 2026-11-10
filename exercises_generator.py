@@ -32,7 +32,14 @@ def parse_yaml_to_template_data(yaml_content, filename):
     questions_data = []
 
     for q_idx, q in enumerate(yaml_content.get("questions", []), start=1):
+        q_type = q.get("type", "answerAlternativeExercise")
         alternatives = []
+
+        raw_correct = q.get("correct_answer", "")
+        if isinstance(raw_correct, list):
+            correct_answer = "|".join(str(item).strip().lower() for item in raw_correct)
+        else:
+            correct_answer = str(raw_correct).strip().lower()
 
         for a_idx, alt in enumerate(q.get("alternatives", []), start=1):
             if isinstance(alt, dict) and "text" in alt:
@@ -45,6 +52,9 @@ def parse_yaml_to_template_data(yaml_content, filename):
                 alt_text = str(alt)
                 is_correct = False
 
+            if is_correct and not correct_answer:
+                correct_answer = alt_text
+
             alternatives.append({
                 "id": f"q{q_idx}_answer{a_idx}",
                 "text": alt_text,
@@ -52,10 +62,11 @@ def parse_yaml_to_template_data(yaml_content, filename):
             })
 
         questions_data.append({
-            "type": q.get("type", "answerAlternativeExercise"),
+            "type": q_type,
             "radio": q.get("radio", False),
             "name": f"question{q_idx}",
             "question": q.get("question", ""),
+            "correct_answer": correct_answer,
             "alternatives": alternatives,
             "correct_explanation": q.get("correct_explanation", ""),
             "incorrect_explanation": q.get("incorrect_explanation", "")

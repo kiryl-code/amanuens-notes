@@ -1,9 +1,11 @@
 import { AnswerAlternativeExercise } from "./answerAlternativeExercise.js";
 import { SelectExercise } from "./selectExercise.js";
+import { TextInputExercise } from "./textInputExercise.js";
 
 const exerciseTypesMap = {
     "answerAlternativeExercise": AnswerAlternativeExercise,
-    "selectExercise": SelectExercise
+    "selectExercise": SelectExercise,
+    "textInputExercise": TextInputExercise,
 }
 
 function main() {
