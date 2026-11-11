@@ -51,6 +51,7 @@ nav:
         - "Grid": css/grid.md
         - "Variabler i CSS": css/variables.md
         - "Font-face": css/font-face.md
+        - "Responsivitet": css/responsiveness.md
 
 markdown_extensions:
   - markdown_extension
