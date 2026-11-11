@@ -53,6 +53,7 @@ nav:
         - "Font-face": css/font-face.md
         - "Responsivitet": css/responsiveness.md
         - "Relativa enheter": css/relative-units.md
+        - "Media queries": css/media-queries.md
 markdown_extensions:
   - markdown_extension
   - fenced_code
