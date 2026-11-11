@@ -35,9 +35,9 @@ nav:
     - "HTML":
         - "HTML": html/html.md
         - "HTML syntax": html/html-syntax.md
-        - "Struktur för ett HTML5 dokument": html/html-structure.md
+        - "Struktur för ett HTML5-dokument": html/html-structure.md
         - "Kodstil": html/html-code-style.md
-        - "De vanligaste HTML element": html/common-elements.md
+        - "De vanligaste HTML-elementen": html/common-elements.md
         - "Semantik": html/semantics.md
         - "Tillgänglighet": html/accessibility.md
     - "CSS":
@@ -52,7 +52,7 @@ nav:
         - "Variabler i CSS": css/variables.md
         - "Font-face": css/font-face.md
         - "Responsivitet": css/responsiveness.md
-
+        - "Relativa enheter": css/relative-units.md
 markdown_extensions:
   - markdown_extension
   - fenced_code

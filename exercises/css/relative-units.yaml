@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=../schema.json
+
+title: Relativa enheter
+questions:
+  - type: answerAlternativeExercise
+    radio: false
+    question: Välj alla relativa enheter
+    alternatives:
+      - px
+      - rem:
+          correct: true
+      - cm
+      - "%":
+          correct: true
+      - em:
+          correct: true
+      - pt
+      - vw:
+          correct: true
+      - vh:
+          correct: true
+    correct_explanation: Ja! `px`, `cm` och `pt` är absoluta enheter och ändras inte beroende på andra elementen eller egenskaper.
+    incorrect_explanation: Tänk på vilka enheter ändrar sina faktiska värden beroende på föräldrarnas eller webbläsarfönstrets egenskaper. Glöm inte att välja alla korrekta alternativ.
+  - type: textInputExercise
+    question: |
+      Omvandla `rem` till `px` för ett `<p>` i koden nedan?
+      ```css
+      html {
+        font-size: 4px;
+      }
+      
+      p {
+        font-size: 3rem;
+      }
+      ```
+    correct_answer:
+      - "12"
+      - 12px
+      - 12 px
+    correct_explanation: "`4px * 3 = 12px`"
+    incorrect_explanation: Tänk på att `rem` beräknas relativt till `font-size` som anges för `<html>`-elementet.
+  - type: textInputExercise
+    question: |
+      Vad är `border-radius` i `px` på ett `<button>` i koden nedan?
+      ```html
+      <div class="largeContainer"></div>
+      <div class="container">
+        <p class="description"></p>
+        <button></button>
+      </div>
+      ```
+      ```css
+      html {
+        font-size: 20px;
+      }
+      
+      .largeContainer {
+        font-size: 1.5rem;
+      }
+      
+      .container {
+        border-radius: 0.5rem;
+      }
+      
+      .description {
+        font-size: 0.8em;
+      }
+      
+      .container button {
+        font-size: 1.5rem;
+        border-radius: 0.5em;
+      }
+      ```
+    correct_answer:
+      - "15"
+      - 15px
+      - 15 px
+    correct_explanation: Eftersom `<button>` har `font-size` som är lika med `1rem = 1.5 * 20px = 30px`, kommer `border-radius` att vara `0.5 * 30px = 15px`.
+    incorrect_explanation: Börja med att ta reda på knappens `font-size` och sedan multiplicera det med hur många `em` som anges för `border-radius`.

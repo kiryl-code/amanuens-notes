@@ -7,7 +7,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Utvecklarverktyg i webbläsare              | v. 46            |
 | **Responsivitet och interaktion med CSS:** | v. 47            |
 | Responsivitet och responsive design        |                  |
-| Relativa enheter                           |                  |
 | @media-query                               |                  |
 | Pseudoklasser och pseudoelement            |                  |
 | Enklare animationer i CSS                  |                  |
