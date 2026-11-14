@@ -44,4 +44,4 @@ print('\n'.join([''.join(['PROGRAMMERING'[(x - y) % 6] if ((x * 0.05)**2 + (y * 
 
 På vissa sidor kan du hitta ett litet quiz där du kan testa dina kunskaper. Testa hur det funkar:
 
-<iframe style="border: medium none currentcolor;" src="../exercises/demo-exercise.html" width="100%" height="280px"></iframe>
+<iframe style="border: medium none currentcolor;" src="exercises/demo-exercise.html" width="100%" height="280px"></iframe>
