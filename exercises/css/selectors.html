@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS selectors</title>
+    <script src="../engine/main.js" type="module"></script>
+    <link rel="stylesheet" href="../engine/styles/main.css">
+    <link rel="stylesheet" href="../../custom_styles.css">
+    <link rel="stylesheet" href="../../darcula.css">
+</head>
+<body>
+    
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Vilket av följande är en CSS-selektor för ett element med id "example"?</p>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q1_answer1">
+                  <input type="radio"
+                         id="q1_answer1"
+                         name="question1"
+                         class="answer ">
+                  <code>example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer2">
+                  <input type="radio"
+                         id="q1_answer2"
+                         name="question1"
+                         class="answer ">
+                  <code>.example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer3">
+                  <input type="radio"
+                         id="q1_answer3"
+                         name="question1"
+                         class="answer ">
+                  <code>&gt; example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer4">
+                  <input type="radio"
+                         id="q1_answer4"
+                         name="question1"
+                         class="answer ">
+                  <code>:example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer5">
+                  <input type="radio"
+                         id="q1_answer5"
+                         name="question1"
+                         class="answer correct">
+                  <code>#example</code>
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Ja, för att välja ett element via dess ID skriver man <code>#&lt;id&gt;</code>.</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Det här alternativet är felaktigt.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="" data-exercise-type="textInputExercise">
+        <div class="question-body">
+            <p>Hur väljer man alla <code>&lt;img&gt;</code>?</p>
+        </div>
+        
+          <input type="text" class="answer" data-correct="img">
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Precis, det är bara att skriva elementets namn!</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>För att välja alla element av en viss typ räcker det med att ange namn.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Vilka av följande alternativ är exempel på klass-selektor?</p>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q3_answer1">
+                  <input type="checkbox"
+                         id="q3_answer1"
+                         name="question3"
+                         class="answer ">
+                  <code>example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer2">
+                  <input type="checkbox"
+                         id="q3_answer2"
+                         name="question3"
+                         class="answer correct">
+                  <code>.example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer3">
+                  <input type="checkbox"
+                         id="q3_answer3"
+                         name="question3"
+                         class="answer correct">
+                  <code>.fw-b</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer4">
+                  <input type="checkbox"
+                         id="q3_answer4"
+                         name="question3"
+                         class="answer ">
+                  <code>#example</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer5">
+                  <input type="checkbox"
+                         id="q3_answer5"
+                         name="question3"
+                         class="answer ">
+                  <code>h1</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer6">
+                  <input type="checkbox"
+                         id="q3_answer6"
+                         name="question3"
+                         class="answer correct">
+                  <code>.h1</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q3_answer7">
+                  <input type="checkbox"
+                         id="q3_answer7"
+                         name="question3"
+                         class="answer ">
+                  <code>#h1</code>
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Helt rätt, när man väljer element via dess klass skriver man <code>.&lt;klass&gt;</code></p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Glöm inte att välja alla korrekta alternativ</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

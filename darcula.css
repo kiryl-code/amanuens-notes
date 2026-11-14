@@ -1,0 +1,83 @@
+.codehilite pre {
+    background-color: #212122;
+    color: #d4d4d4;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* Tokens */
+.codehilite .hll { background-color: #2A2A2B26; }
+.codehilite .c   { color: #808080; } /* Comment */
+.codehilite .err { color: #f44747; } /* Error */
+.codehilite .k   { color: #CC7832; font-weight: bold; } /* Keyword */
+.codehilite .l   { color: #6A8759; } /* Literal */
+.codehilite .n   { color: #d4d4d4; } /* Name */
+.codehilite .o   { color: #d4d4d4; } /* Operator */
+.codehilite .p   { color: #d4d4d4; } /* Punctuation */
+
+/* Comments */
+.codehilite .ch  { color: #808080; }
+.codehilite .cm  { color: #808080; }
+.codehilite .cp  { color: #CC7832; }
+.codehilite .cpf { color: #6A8759; }
+.codehilite .c1  { color: #808080; }
+.codehilite .cs  { color: #808080; }
+
+/* Keywords */
+.codehilite .kc  { color: #6A8759; }
+.codehilite .kd  { color: #CC7832; font-weight: bold; }
+.codehilite .kn  { color: #CC7832; font-weight: bold; }
+.codehilite .kp  { color: #d7ba7d; }
+.codehilite .kr  { color: #CC7832; font-weight: bold; }
+.codehilite .kt  { color: #FFC66D; }
+
+/* Names & Tags */
+.codehilite .na  { color: #BABABA; } /* Attribute */
+.codehilite .nb  { color: #FFC66D; } /* Builtin */
+.codehilite .bp  { color: #d7ba7d; } /* Builtin Pseudo */
+.codehilite .nc  { color: #D7BA7D; } /* Class */
+.codehilite .no  { color: #6897BB; } /* Constant */
+.codehilite .nd  { color: #FFC66D; } /* Decorator */
+.codehilite .ne  { color: #D7BA7D; } /* Exception */
+.codehilite .nf  { color: #FFC66D; } /* Function */
+.codehilite .fm  { color: #FFC66D; } /* Function Magic */
+.codehilite .nl  { color: #C8C8C8; } /* Label */
+.codehilite .nt  { color: #FFC66D; } /* Tag (<form>, <h1> etc) */
+.codehilite .nx  { color: #d4d4d4; } /* Other */
+
+/* Numbers */
+.codehilite .m,
+.codehilite .mb,
+.codehilite .mf,
+.codehilite .mh,
+.codehilite .mi,
+.codehilite .mo,
+.codehilite .il { color: #6897BB; }
+
+/* Strings */
+.codehilite .s,
+.codehilite .sa,
+.codehilite .sb,
+.codehilite .sc,
+.codehilite .dl,
+.codehilite .sd,
+.codehilite .s2,
+.codehilite .se,
+.codehilite .sh,
+.codehilite .sx,
+.codehilite .s1,
+.codehilite .ss { color: #6A8759; }
+.codehilite .si { color: #FFC66D; } /* String Interpolation */
+.codehilite .sr { color: #6A8759; } /* Regex */
+
+/* Generic / Diff */
+.codehilite .gd { color: #ce9178; } /* Deleted */
+.codehilite .gi { color: #b5cea8; } /* Inserted */
+.codehilite .gr { color: #f44747; } /* Error */
+.codehilite .gh { color: #FFC66D; } /* Heading */
+.codehilite .gu { color: #FFC66D; } /* Subheading */
+.codehilite .go { color: #6A8759; } /* Output */
+.codehilite .gp { color: #C8C8C8; } /* Prompt */
+.codehilite .gt { color: #f44747; } /* Traceback */
+.codehilite .ge { font-style: italic; }
+.codehilite .gs { font-weight: bold; color: #FFC66D; }

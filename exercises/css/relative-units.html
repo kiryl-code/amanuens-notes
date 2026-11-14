@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Relativa enheter</title>
+    <script src="../engine/main.js" type="module"></script>
+    <link rel="stylesheet" href="../engine/styles/main.css">
+    <link rel="stylesheet" href="../../custom_styles.css">
+    <link rel="stylesheet" href="../../darcula.css">
+</head>
+<body>
+    
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Välj alla relativa enheter</p>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q1_answer1">
+                  <input type="checkbox"
+                         id="q1_answer1"
+                         name="question1"
+                         class="answer ">
+                  px
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer2">
+                  <input type="checkbox"
+                         id="q1_answer2"
+                         name="question1"
+                         class="answer correct">
+                  rem
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer3">
+                  <input type="checkbox"
+                         id="q1_answer3"
+                         name="question1"
+                         class="answer ">
+                  cm
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer4">
+                  <input type="checkbox"
+                         id="q1_answer4"
+                         name="question1"
+                         class="answer correct">
+                  %
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer5">
+                  <input type="checkbox"
+                         id="q1_answer5"
+                         name="question1"
+                         class="answer correct">
+                  em
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer6">
+                  <input type="checkbox"
+                         id="q1_answer6"
+                         name="question1"
+                         class="answer ">
+                  pt
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer7">
+                  <input type="checkbox"
+                         id="q1_answer7"
+                         name="question1"
+                         class="answer correct">
+                  vw
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer8">
+                  <input type="checkbox"
+                         id="q1_answer8"
+                         name="question1"
+                         class="answer correct">
+                  vh
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Ja! <code>px</code>, <code>cm</code> och <code>pt</code> är absoluta enheter och ändras inte beroende på andra elementen eller egenskaper.</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Tänk på vilka enheter ändrar sina faktiska värden beroende på föräldrarnas eller webbläsarfönstrets egenskaper. Glöm inte att välja alla korrekta alternativ.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="" data-exercise-type="textInputExercise">
+        <div class="question-body">
+            <p>Omvandla <code>rem</code> till <code>px</code> för ett <code>&lt;p&gt;</code> i koden nedan?</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+        </div>
+        
+          <input type="text" class="answer" data-correct="12|12px|12 px">
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p><code>4px * 3 = 12px</code></p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Tänk på att <code>rem</code> beräknas relativt till <code>font-size</code> som anges för <code>&lt;html&gt;</code>-elementet.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="" data-exercise-type="textInputExercise">
+        <div class="question-body">
+            <p>Vad är <code>border-radius</code> i <code>px</code> på ett <code>&lt;button&gt;</code> i koden nedan?</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"largeContainer"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"description"</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nt">html</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">largeContainer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">description</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="nt">button</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+        </div>
+        
+          <input type="text" class="answer" data-correct="15|15px|15 px">
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Eftersom <code>&lt;button&gt;</code> har <code>font-size</code> som är lika med <code>1rem = 1.5 * 20px = 30px</code>, kommer <code>border-radius</code> att vara <code>0.5 * 30px = 15px</code>.</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Börja med att ta reda på knappens <code>font-size</code> och sedan multiplicera det med hur många <code>em</code> som anges för <code>border-radius</code>.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

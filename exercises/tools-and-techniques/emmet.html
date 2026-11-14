@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Emmet</title>
+    <script src="../engine/main.js" type="module"></script>
+    <link rel="stylesheet" href="../engine/styles/main.css">
+    <link rel="stylesheet" href="../../custom_styles.css">
+    <link rel="stylesheet" href="../../darcula.css">
+</head>
+<body>
+    
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Hur kan man skapa följande struktur med emmet?</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q1_answer1">
+                  <input type="checkbox"
+                         id="q1_answer1"
+                         name="question1"
+                         class="answer ">
+                  <code>div&gt;a&gt;p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer2">
+                  <input type="checkbox"
+                         id="q1_answer2"
+                         name="question1"
+                         class="answer ">
+                  <code>.container&gt;a*2&gt;p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer3">
+                  <input type="checkbox"
+                         id="q1_answer3"
+                         name="question1"
+                         class="answer correct">
+                  <code>div.container&gt;a*2+p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer4">
+                  <input type="checkbox"
+                         id="q1_answer4"
+                         name="question1"
+                         class="answer ">
+                  <code>#container&gt;a*2&gt;p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer5">
+                  <input type="checkbox"
+                         id="q1_answer5"
+                         name="question1"
+                         class="answer ">
+                  <code>div.container&gt;a*2&gt;p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer6">
+                  <input type="checkbox"
+                         id="q1_answer6"
+                         name="question1"
+                         class="answer ">
+                  <code>div&gt;a+p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer7">
+                  <input type="checkbox"
+                         id="q1_answer7"
+                         name="question1"
+                         class="answer ">
+                  <code>#container&gt;a*2+p</code>
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer8">
+                  <input type="checkbox"
+                         id="q1_answer8"
+                         name="question1"
+                         class="answer correct">
+                  <code>.container&gt;a*2+p</code>
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Ja! När man inte anger elementet, men skriver vilken klass eller vilket id det ska ha kommer emmet att skapa ett <code>&lt;div&gt;</code>. Det betyder att <code>.container</code> och <code>div.container</code> kommer att ge samma resultat. Vi använder också <code>+p</code>, eftersom <code>&lt;a&gt;</code> och <code>&lt;p&gt;</code> ska vara på samma djup.</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Tänk på att <code>&lt;a&gt;</code> och <code>&lt;p&gt;</code> är på samma nivå. Tänk också på vad är klasselektor och om man behöver ange element + klassnamn eller räcker det med klassnamnet. Kan båda alternativ vara korrekta? Välj alla svar som du tycker är korrekta.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    <hr>
+    
+    <form action="" data-exercise-type="textInputExercise">
+        <div class="question-body">
+            <p>Skriv emmet-förkortning för följande struktur:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">""</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</code></pre></div>
+        </div>
+        
+          <input type="text" class="answer" data-correct="header&gt;nav&gt;a*3^h1+p+button">
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Bra jobbat!</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Tänk så här: först skapar vi <code>&lt;header&gt;</code>, inuti den ska det finnas ett <code>&lt;nav&gt;</code>. Vilket tecken använder man för att skriva "inuti" med emmet? Samma sak med tre länkar. Tänk på vilket tecken som används för att skapa flera sådana element. Sist, använd ett tecken för att gå ett steg tillbaka i djupet och lägga till <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> och <code>&lt;button&gt;</code>.</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

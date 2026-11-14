@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempelquiz</title>
+    <script src="engine/main.js" type="module"></script>
+    <link rel="stylesheet" href="engine/styles/main.css">
+    <link rel="stylesheet" href="../custom_styles.css">
+    <link rel="stylesheet" href="../darcula.css">
+</head>
+<body>
+    
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Välj det korrekta alternativet och tryck sedan på "Kontrollera"</p>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q1_answer1">
+                  <input type="radio"
+                         id="q1_answer1"
+                         name="question1"
+                         class="answer correct">
+                  Korrekt alternativ
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer2">
+                  <input type="radio"
+                         id="q1_answer2"
+                         name="question1"
+                         class="answer ">
+                  Fel alternativ
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Du fattar hur det funkar. Bra! 😎</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Du skulle ju välja ett korrekt alternativ... 🫤</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>
