@@ -1,5 +1,19 @@
-code {
-    color: #9f4511 !important;
+:root, [data-md-color-scheme=default] {
+    --md-code-fg-color: #9f4511 !important;
+    --side-block-border-color: #ccc !important;
+    --md-text-font: apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen" !important;
+}
+
+[data-md-color-scheme=slate] {
+    --md-code-fg-color: #EE7D3A !important;
+    --side-block-border-color: #333 !important;
+    --md-text-font: apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen" !important;
+}
+
+hr {
+    height: 1px !important;
+    border: none !important;
+    background: linear-gradient(to right, transparent, var(--side-block-border-color), transparent) !important;
 }
 
 .cm {
@@ -10,12 +24,22 @@ code {
     overflow-x: auto;
 }
 
+.highlight pre {
+    overflow-x: auto;
+}
+
 summary {
     max-width: 100%  !important;
     background: var(--md-primary-fg-color)  !important;
     color: #fff  !important;
     padding: 0.4em 1em   !important;
     border-radius: 6px 6px 0 0  !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+summary::after {
+    top: auto !important;
 }
 
 details {
@@ -45,7 +69,7 @@ details[open] {
 .collapsible-content {
     max-width: 100% !important;
     padding: 1em 2em  !important;
-    border: 0.5px solid #999  !important;
+    border: 0.5px solid var(--side-block-border-color)  !important;
     border-radius: 0 0 6px 6px  !important;
 }
 
@@ -67,6 +91,6 @@ th {
 .side-block {
     padding: 0px 1em;
     border-radius: 0.5em;
-    border: 1px solid #ccc;
+    border: 1px solid var(--side-block-border-color);
     border-left: 0.5em solid;
 }

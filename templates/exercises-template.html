@@ -4,13 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <script src="{{ root_prefix }}engine/main.js" type="module"></script>
-    <link rel="stylesheet" href="{{ root_prefix }}engine/styles/main.css">
-    <link rel="stylesheet" href="{{ common_styles_prefix }}custom_styles.css">
-    <link rel="stylesheet" href="{{ common_styles_prefix }}darcula.css">
+    <script>
+        function syncThemeAttributes() {
+            if (window.parent === window) return;
+            const parentDoc = window.parent.document;
+            const source = parentDoc.body || parentDoc.documentElement;
+            if (!source) return;
+
+            for (const attr of source.attributes) {
+                if (attr.name.startsWith("data-md-")) {
+                    document.documentElement.setAttribute(attr.name, attr.value);
+                    if (document.body) {
+                        document.body.setAttribute(attr.name, attr.value);
+                    }
+                }
+            }
+        }
+
+        function getParentStyleSheet () {
+            if (window.parent === window) return;
+
+            try {
+                document.querySelector("#standalone_style").remove();
+                const parentDoc = window.parent.document;
+                parentDoc.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
+                    const clone = document.createElement("link");
+                    clone.rel = "stylesheet";
+                    clone.href = link.href;
+                    document.head.appendChild(clone);
+                });
+
+                const observer = new MutationObserver(syncThemeAttributes);
+                observer.observe(parentDoc.documentElement, {
+                    attributes: true,
+                    subtree: true,
+                    attributeFilter: ["data-md-color-scheme", "data-md-color-primary", "data-md-color-accent"]
+                });
+            } catch (e) {}
+        }
+        document.addEventListener("DOMContentLoaded", getParentStyleSheet);
+        document.addEventListener("DOMContentLoaded", syncThemeAttributes);
+    </script>
+
+    <script src="{{ common_styles_prefix }}_engine/exercises/main.js" type="module"></script>
+    <link rel="stylesheet" href="{{ common_styles_prefix }}_engine/exercises/styles/main-standalone.css" id="standalone_style">
+    <link rel="stylesheet" href="{{ common_styles_prefix }}_engine/exercises/styles/main.css">
+    <link rel="stylesheet" href="{{ common_styles_prefix }}_engine/stylesheets/darcula.css">
+    <link rel="stylesheet" href="{{ common_styles_prefix }}_engine/stylesheets/custom_styles.css">
 </head>
-<body>
-    {% for q in questions %}
+<body class="md-typeset">
+{% for q in questions %}
     <form action="" data-exercise-type="{{ q.type }}">
         <div class="question-body">
             {{ q.question | md }}

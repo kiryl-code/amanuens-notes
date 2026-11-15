@@ -40,6 +40,35 @@ Ibland får mina kodexempel inte plats så scrolla gärna horisontellt inuti kod
 print('\n'.join([''.join(['PROGRAMMERING'[(x - y) % 6] if ((x * 0.05)**2 + (y * 0.1)**2 - 1)**3 - (x * 0.05)**2 * (y * 0.1)**3 <= 0 else ' ' for x in range(-30, 30)]) for y in range(15, -15, -1)]))
 ```
 
+### Tabs
+
+Ibland kan det vara smidigt att använda tabs. Klicka på dem för att se innehållet:
+
+/// tab | .gitignore
+```text
+.venv/
+.idea/
+.scode/
+```
+///
+/// tab | README.md
+```md
+# Ett enkelt python-program
+
+Det här programmet skriver ut "Hello World!".
+```
+///
+/// tab | main.py
+```py
+def main():
+    print("Hello World!")
+
+
+if __name__ == "__main__":
+    main()
+```
+///
+
 ### Quiz
 
 På vissa sidor kan du hitta ett litet quiz där du kan testa dina kunskaper. Testa hur det funkar:

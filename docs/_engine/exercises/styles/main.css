@@ -1,18 +1,11 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serifui;
-    max-width: 60ch;
 }
 
-body {
-    min-height: 100vh;
-    width: 100vw;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+html {
+    font-size: 1rem;
 }
 
 .hidden {
@@ -50,26 +43,26 @@ input[type="text"] {
 }
 
 button {
-    outline: none;
-    background-color: #4051b5;
-    color: #ffffff;
-    border: none;
-    padding: 6px 24px;
-    border-radius: 8px;
-    cursor: pointer;
+    outline: none !important;
+    background-color: var(--md-primary-fg-color) !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 6px 24px !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
 }
 
 button:hover {
-    background-color: #4051ef;
+    background-color: #4051ef !important;
 }
 
 select {
-    outline: none;
-    background-color: #4051b5;
-    color: #ffffff;
-    border: none;
-    padding: 6px 24px;
-    border-radius: 8px;
+    outline: none !important;
+    background-color: #4051b5 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 6px 24px !important;
+    border-radius: 8px !important;
 }
 
 .correct {
@@ -98,31 +91,6 @@ select {
     color: #000000;
 }
 
-hr {
-    height: 1px;
-    border: none;
-    background: linear-gradient(to right, transparent, #000, transparent);
-}
-
-code {
-    font-family: Melno,Consolas,monospace;
-    background-color: #f2f4f4;
-}
-
-.codehilite {
-    margin-top: 1rem;
-    max-width: 100%;
-    overflow-x: auto;
-}
-
-.codehilite code {
-    background: none;
-}
-
-.codehilite span {
-    font-family: Melno,Consolas,monospace;
-}
-
 .explanations {
     display: flex;
     flex-direction: column;
@@ -132,7 +100,7 @@ code {
 }
 
 .explanations code {
-    background-color: rgba(217, 217, 217, 0.2);
+    background-color: rgba(217, 217, 217, 0.2) !important;
     border-radius: 8px;
     padding: 0 0.4rem;
     color: #ffffff !important;

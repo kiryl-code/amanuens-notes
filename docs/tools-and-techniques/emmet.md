@@ -20,7 +20,7 @@ Säg att vi vill skapa en lista med 3 element:
 </ul>
 ```
 
-Att skriva in alla `<li>`-element kan ta lite tid. Med emmet räcker det att du skriver `ul>li*3` och trycker på `tab`.
+Att skriva in alla `<li>`-element kan ta lite tid. Med emmet räcker det att du skriver `ul>li*3` och trycker på ++tab++.
 
 Med en enkel deduktion kan du klura ut att `>` används för barnelement och `*X` används för att deklarera hur många sådana element som ska skapas. Nedan kommer en lite mer utförlig lista med olika modifierare.
 

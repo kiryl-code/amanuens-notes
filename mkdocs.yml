@@ -67,7 +67,11 @@ markdown_extensions:
   - sane_lists
   - tables
   - footnotes
+  - pymdownx.keys
+  - pymdownx.blocks.tab:
+      alternate_style: true
+      combine_header_slug: true
 
 extra_css:
-  - custom_styles.css
-  - darcula.css
+  - _engine/stylesheets/custom_styles.css
+  - _engine/stylesheets/darcula.css
