@@ -4,15 +4,11 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 
 | Modul/moment/koncept                       | Preliminär vecka |
 |--------------------------------------------|------------------|
-| Utvecklarverktyg i webbläsare              | v. 46            |
-| **Responsivitet och interaktion med CSS:** | v. 47            |
+| Utvecklarverktyg i webbläsare              | v. 47            |
+| **Responsivitet och interaktion med CSS:** | v. 50-51         |
 | Pseudoklasser och pseudoelement            |                  |
 | Enklare animationer i CSS                  |                  |
-| **Grunderna i JavaScript:**                | v. 48            |
-| JavaScript, översikt                       |                  |
-| Att koppla JS till HTML                    |                  |
-| Grundläggande JS-syntax                    |                  |
-| **Manipulera sidan med JS:**               | v. 49            |
+| **Manipulera sidan med JS:**               | v. 48            |
 | Objekt i JS, DOM                           |                  |
 | Selectors                                  |                  |
 | Manipulera innehållet                      |                  |

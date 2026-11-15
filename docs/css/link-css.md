@@ -4,7 +4,7 @@ Det finns flera tillvägagångssätt för att skriva CSS-stilar för olika HTML-
 
 ---
 
-## Style attribut
+## Style-attribut
 
 Samtliga HTML-element har ett attribut som heter `style`. Värdet man anger för det här attributet är CSS-kod för elementet, till exempel:
 
@@ -12,13 +12,13 @@ Samtliga HTML-element har ett attribut som heter `style`. Värdet man anger för
 <a href="#" style="color: green; font-size: 24px;">Klicka på mig!</a>
 ```
 
-Den här metoden kan användas ibland, men den har flera brister, framför allt när det gäller skalbarhet. Har man en stor HTML-fil där flera länkar måste formateras på samma sätt kan det snabbt bli många oläsbara upprepningar i koden. 
+Den här metoden kan användas ibland, men den har flera brister, framför allt när det gäller skalbarhet. Har man en stor HTML-fil där flera länkar måste formateras på samma sätt, kan det snabbt bli många oläsbara upprepningar i koden. 
 
 ---
 
 ## Style element
 
-Man skriva all CSS inuti `<style>`-elementet (som vanligtvis placeras i `<head>`).
+Man skriver all CSS inuti `<style>`-elementet (som vanligtvis placeras i `<head>`).
 
 ---
 
@@ -30,7 +30,7 @@ Men tänk att du vill tillämpa samma stilmall på alla HTML-dokument. Då är d
 <link rel="stylesheet" href="...">
 ```
 
-Där `href` är filsökvägen till CSS-filen. Det behöver inte vara en lokal fil, utan det kan även vara en CSS-fil från nätet. Det är bara att ange rätt sökväg. Man brukar vanligtvis länka till CSS-dokument i `<head>`.
+Där `href` är filens sökväg till CSS-filen. Det behöver inte vara en lokal fil, utan det kan även vara en CSS-fil från nätet. Det är bara att ange rätt sökväg. Man brukar vanligtvis länka till CSS-dokument i `<head>`.
 
 !!!! success
 Det är främst den sista metoden, med en extern fil, som du ska använda mest.

@@ -54,6 +54,10 @@ nav:
         - "Responsivitet": css/responsiveness.md
         - "Relativa enheter": css/relative-units.md
         - "Media queries": css/media-queries.md
+    - "JavaScript":
+        - "JavaScript": javascript/js.md
+        - "Att koppla JavaScript till HTML": javascript/link-js.md
+        - "JavaScript syntax": javascript/js-syntax.md
 markdown_extensions:
   - markdown_extension
   - fenced_code

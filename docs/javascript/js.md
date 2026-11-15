@@ -1,0 +1,3 @@
+# JavaScript
+
+JavaScript är ett programmerinsspråk många användningsområden inom webbutveckling och kan användas på både frontend och backend. När det kommer till frontend körs JavaScript direkt i webbläsare och koden skrivs i filerna med `.js` filändelse. Precis som med HTML och CSS kan man använda vilken som helst textredigerare för att skiva JavaScript kod. Jag rekommenderar att du använder *WebStorm* eller *Visual Studio Code* för att få syntax highlight och för att få med ytterligare några hjälpsamma funktioner.
