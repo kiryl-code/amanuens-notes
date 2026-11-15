@@ -4,7 +4,7 @@
 Du kanske vill läsa lite om HTML och CSS grundläggande syntax först, eftersom emmet berör båda.
 !!!!
 
-Emmet är ett verktyg som finns inbyggt i både _VSCode_ och _WebStorm_, men kan även installeras för andra IDE. Verktyget används för att snabba upp utvecklingsprocessen genom att använda förkortningar som sedan automatiskt expanderas till riktiga HTML- och CSS-strukturer.
+Emmet är ett verktyg som finns inbyggt i både _VSCode_ och _WebStorm_, men kan även installeras för andra IDE:er. Verktyget används för att snabba upp utvecklingsprocessen genom att använda förkortningar som sedan automatiskt expanderas till riktiga HTML- och CSS-strukturer.
 
 ---
 

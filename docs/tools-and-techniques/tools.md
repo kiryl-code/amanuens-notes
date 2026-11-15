@@ -46,7 +46,7 @@ När du har installerat tillägget kommer en ny knapp, **Go Live**, att dyka upp
 
 ## Webbläsare
 
-Oftast spelar det inte så stor roll vilken webbläsare du använder när du lär dig. När man kommer djupare in i ämnet ser man fler skillnader mellan olika webbläsare, eftersom varje webbläsare kan ha egna standardinställningar för olika delar av det man jobbar med inom frontend. Till att börja med kan du ha två webbläsare som du kan använda för att testa din kod: en som är chromium-baserad och en som är firefox-baserad. Detta ger dig möjlighet att testa mot två av de största webbläsarmotorerna och gör att du kan känna dig ganska säker på att sidan fungerar i många webbläsare.
+Oftast spelar det inte så stor roll vilken webbläsare du använder när du lär dig. När man kommer djupare in i ämnet ser man fler skillnader mellan olika webbläsare, eftersom varje webbläsare kan ha egna standardinställningar för olika delar av det man jobbar med inom frontend. Till att börja med kan du ha två webbläsare som du kan använda för att testa din kod: en som är Chromium-baserad och en som är Firefox-baserad. Detta ger dig möjlighet att testa mot två av de största webbläsarmotorerna och gör att du kan känna dig ganska säker på att sidan fungerar i många webbläsare.
 
 ^^^^Chromium- och Firefox-baserade webbläsare
 ### Chromium

@@ -205,7 +205,7 @@ Innan du kollar på koden, tänk på hur man kan skapa följande layout:
 
 ^^^^Facit
 
-Här är det viktigt att förstå hur grid hanterar automatisk placering. När `<nav>` sträcker sig över tre rader upptar det även utrymme i rader där andra element ska placeras. Grid försöker då hitta lediga platser för återstående elementen och kan vid behov skapa "implicita" rader eller kolumner. Det innebär att det faktiska resultatet inte alltid blir som man först tänkt sig. Därför är det bra att kontrollera hur elementen placeras när man använder `<span>`.
+Här är det viktigt att förstå hur grid hanterar automatisk placering. När `<nav>` sträcker sig över tre rader upptar det även utrymme i rader där andra element ska placeras. Grid försöker då hitta lediga platser för återstående element och kan vid behov skapa "implicita" rader eller kolumner. Det innebär att det faktiska resultatet inte alltid blir som man först tänkt sig. Därför är det bra att kontrollera hur elementen placeras när man använder `<span>`.
 
 ```html
 <body>
@@ -246,7 +246,7 @@ nav {
 
 ## Externa resurser
 
-> Det är en lång video, men den går igenom allt i detalj och tar upp några saker som inte nämns på den här sidan. Rekommenderar starkt om du verkligen vill lära dig grid.  
+> Det är en lång video, men den går igenom allt i detalj och tar upp några saker som inte nämns på den här sidan. Rekommenderas starkt om du verkligen vill lära dig grid.  
 > [CSS Grid Crash Course](https://www.youtube.com/watch?v=0xMQfnTU6oo) `YouTube`  
 > [CSS grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout) `MDN`  
 > [CSS Grid Layout](https://www.w3schools.com/css/css_grid.asp) `W3School`

@@ -1,6 +1,6 @@
 # De vanligaste elementen
 
-Jag kommer inte kunna gå igenom alla element som finns och därför väljer jag väldigt specifika exempel för olika typer av innehåll. Du får gärna kika på externa resurser för att få en översikt över flera HTML-element. Testa mina exempel genom att kopiera och klistra in koden i en HTML-fil.
+Jag kommer inte att kunna gå igenom alla element som finns och därför väljer jag väldigt specifika exempel för olika typer av innehåll. Du får gärna kika på externa resurser för att få en översikt över flera HTML-element. Testa mina exempel genom att kopiera och klistra in koden i en HTML-fil.
 
 ---
 

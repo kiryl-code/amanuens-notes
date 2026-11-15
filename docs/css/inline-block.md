@@ -23,5 +23,5 @@ Det finns även `inline-block` som kombinerar egenskaper från båda typerna. Et
 ---
 
 !!!! warning
-Kom ihåg att `inline`, `block` och `inline-block` handlar om elementens CSS-egenskap `display`. Detta är alltså inte elementets egna egenskap, utan man kan ändra hur ett element visas med CSS.
+Kom ihåg att `inline`, `block` och `inline-block` handlar om elementens CSS-egenskap `display`. Detta är alltså inte elementets egna egenskaper, utan man kan ändra hur ett element visas med CSS.
 !!!!

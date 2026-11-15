@@ -4,5 +4,4 @@ build/
 
 __pycache__/
 
-docs/exercises/*
-!docs/exercises/engine/
+docs/exercises/

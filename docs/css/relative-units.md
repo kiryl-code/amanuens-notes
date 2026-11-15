@@ -43,7 +43,7 @@ p {
 }
 ```
 
-I exemplet ovan sätter vi textstorleken till `1.5rem`, vilket motsvarar `18px` och säger att `line-height`, dvs en textrads höjd, ska vara `1em`. Eftersom `em` beror på elementets egen `font-size` kommer det vara lika med `18px`.
+I exemplet ovan sätter vi textstorleken till `1.5rem`, vilket motsvarar `18px`, och säger att `line-height`, dvs en textrads höjd, ska vara `1em`. Eftersom `em` beror på elementets egen `font-size` kommer det vara lika med `18px`.
 
 Vad händer då om man sätter `font-size` på ett element till ett värde med `em`-enheten? I så fall kommer förälderns `font-size` att användas som en referens:
 

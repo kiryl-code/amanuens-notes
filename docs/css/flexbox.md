@@ -91,7 +91,7 @@ Man kan även styra hur elementen placeras längs den sekundära axeln, alltså 
 | Sträck ut elementen så att de fyller behållarens tillgängliga utrymme längs tväraxeln(*) | `stretch` (standard)   |
 | Justera elementen efter deras textbaslinje                                               | `baseline`             |
 
-(*) Det är viktigt att notera att det endast gäller för element med `height: auto;`. Har elementet ett fast höjd, till exempel `height: 25px;` kommer det inte påverkas.
+(*) Det är viktigt att notera att det endast gäller för element med `height: auto;`. Har elementet en fast höjd, till exempel `height: 25px;`, kommer det inte att påverkas.
 
 ^^^^Kolla på hur det ser ut
 <iframe style="border: medium none currentcolor;" src="../../demo/flexbox/align-items.html" width="100%" height="900" name="flexbox-align-items-demo" sandbox="allow-scripts allow-same-origin allow-forms" loading="lazy" allowfullscreen="allowfullscreen" scrolling="yes"></iframe>

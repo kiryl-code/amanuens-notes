@@ -45,7 +45,7 @@ Nästlade kataloger och filer läggs till på samma sätt som i det första exem
 <img src="../img/icons/logo.svg" alt="logotyp">
 ```
 
-Man kan även länka till **andra webbplatser**. Det finns alltså ingenting som stoppar dig från att skriva 
+Man kan även länka till **andra webbplatser**. Det finns alltså ingenting som stoppar dig från att skriva: 
 
 ```html
 <a href="https://www.google.com/">Klicka på mig!</a>
