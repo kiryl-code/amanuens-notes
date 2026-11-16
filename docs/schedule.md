@@ -9,8 +9,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Pseudoklasser och pseudoelement            |                  |
 | Enklare animationer i CSS                  |                  |
 | **Manipulera sidan med JS:**               | v. 48            |
-| Objekt i JS, DOM                           |                  |
-| Selectors                                  |                  |
 | Manipulera innehållet                      |                  |
 | Skapa, ta bort och ändra element           |                  |
 | Callbacks och lambda-funktioner            |                  |
