@@ -25,7 +25,7 @@ Det är alltså innehållet inom parenteserna efter `console.log` som ska skriva
 
 ## Variabler och datatyper
 
-JavaScript är ett dynamiskt språk, vilket innebär att man inte anger datatyper på variabler, utan dessa bestäms vid körning baserat på de värden som lagras i variablerna.
+JavaScript är ett dynamiskt typat språk, vilket innebär att man inte anger datatyper på variabler, utan dessa bestäms vid körning baserat på de värden som lagras i variablerna.
 
 Variabler i JavaScript kan deklareras med tre olika nyckelord, beroende på vilket beteende du vill uppnå. Det sätt som liknar hur variablerna fungerar i de flesta andra programmeringsspråk är att använda nyckelordet `let`:
 
@@ -115,7 +115,6 @@ console.log("Hello World!" / 10);
 
 ## `const` och mutability
 
-^^^^`const` och mutability
 Jag vill förtydliga hur `const` egentligen fungerar och introducera begreppet *mutability*. Mutability kan beskrivas som ett värdes förmåga att ändras. Men det finns en skillnad mellan tilldelning och ändring av faktiska värden som lagras. `const` förhindrar just **tilldelningen**:
 
 ```javascript
@@ -143,7 +142,6 @@ Det här är dock helt rimligt och kommer fungera hur bra som helst. Utskriftern
 Det finns alltså datastrukturer vars innehåll kan ändras även om själva variabeln som håller värdena är `const`. Dessa datastrukturer är **mutable**; deras värde kan ändras. Exempel på sådana datastrukturer är listor och objekt. 
 
 Å andra sidan finns det även **immutable** datastrukturer som inte går att ändra, till exempel strängar.
-^^^^
 
 ---
 
@@ -296,6 +294,40 @@ while(i < lastFiveYears.length) {
     i++;
 }
 // ger samma output
+```
+
+### `break` och `continue`:
+
+Båda nyckelorden finns i JavaScript och kan användas för att:
+
+- `break` - avsluta loopen
+- `continue` - gå direkt till nästa iteration
+
+Här är ett exempel:
+
+```javascript
+const temperatures = [21.5, null, 22.0, -999, 23.4, 104.2, 22.8];
+for (const temp of temperatures) {
+    if (temp === null || temp < -50) {
+        console.log("Inappropriate value, skipping...");
+        continue;
+    }
+    
+    if (temp > 100) {
+        console.log(`WARNING: Overheating (${temp}°C)! Shutting down...`);
+        break;
+    }
+
+    console.log(`Normal temperature: ${temp}°C`);
+}
+
+// output:
+// Normal temperature: 21.5°C
+// Inappropriate value, skipping...
+// Normal temperature: 22°C
+// Inappropriate value, skipping...
+// Normal temperature: 23.4°C
+// WARNING: Overheating (104.2°C)! Shutting down...
 ```
 
 ---
