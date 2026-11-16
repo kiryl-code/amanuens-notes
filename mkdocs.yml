@@ -24,11 +24,11 @@ theme:
 nav:
   - "Börja här": index.md
   - "Utveckling pågår": schedule.md
+  - "Allmänna guider":
+      - "Markdown": general/markdown.md
+      - "Terminal": general/terminal.md
   - "Webbutveckling (frontend)":
     - "Verktyg & Tekniker":
-  #      - "Terminal": tools-and-techniques/terminal.md
-  #      - "Markdown": tools-and-techniques/markdown.md
-  #      - "Versionshantering med git": tools-and-techniques/git.md
         - "Utvecklingsmiljö": tools-and-techniques/tools.md
         - "Emmet": tools-and-techniques/emmet.md
         - "Att koppla externa filer": tools-and-techniques/linking-to-files.md
