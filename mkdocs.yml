@@ -60,6 +60,8 @@ nav:
         - "JavaScript": javascript/js.md
         - "Att koppla JavaScript till HTML": javascript/link-js.md
         - "JavaScript syntax": javascript/js-syntax.md
+        - "Objekt i JavaScript": javascript/objects-in-js.md
+        - "Att komma åt HTML-element från JavaScript": javascript/js-selectors.md
 markdown_extensions:
   - markdown_extension
   - fenced_code
