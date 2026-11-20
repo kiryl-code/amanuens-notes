@@ -36,6 +36,16 @@ OM mediatypen är "screen" OCH viewportens bredd är större än 400px OCH högs
     ANVÄND CSS-reglerna här
 ```
 
+!!!!warning
+Det väldigt viktigt att definiera hur sidans *viewport* (den synliga ytan i webbläsaren) ska skalas för att `@media screen` ska fungera som tänkt på mobila enheter. Det görs genom att lägga till följande `<meta>`-element inuti `<head>`:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Om du glömmer den här raden kommer mobila webbläsare oftast att simulera en bred datorskärm och zooma ut hela sidan så att innehållet blir orimligt litet.
+!!!!
+
 ---
 
 ## Externa resurser
