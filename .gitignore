@@ -2,6 +2,7 @@
 build/
 .venv/
 .idea/
+.docs/kattis/
 
 __pycache__/
 
