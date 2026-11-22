@@ -4,10 +4,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 
 | Modul/moment/koncept                       | Preliminär vecka |
 |--------------------------------------------|------------------|
-| Utvecklarverktyg i webbläsare              | v. 47            |
-| **Responsivitet och interaktion med CSS:** | v. 50-51         |
-| Pseudoklasser och pseudoelement            |                  |
-| Enklare animationer i CSS                  |                  |
 | **Manipulera sidan med JS:**               | v. 48            |
 | Manipulera innehållet                      |                  |
 | Skapa, ta bort och ändra element           |                  |
@@ -22,7 +18,11 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Fetch API                                  |                  |
 | Single Page Application (SPA)              |                  |
 | Routing i SPA                              |                  |
+| **Responsivitet och interaktion med CSS:** | v. 50-51         |
+| Pseudoklasser och pseudoelement            |                  |
+| Enklare animationer i CSS                  |                  |
 | Web Components                             | v. 51            |
 | Custom Elements                            |                  |
 | Shadow DOM                                 |                  |
 | Template-element                           |                  |
+| Utvecklarverktyg i webbläsare              | TBD              |
