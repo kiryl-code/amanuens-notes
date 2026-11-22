@@ -3,7 +3,7 @@
 Om du har jobbat med något av de C-baserade programmeringsspråken, såsom C, C++, C# eller Java, kommer du att förstå JavaScripts syntax snabbt och enkelt. Man använder olika parenteser `()` och `{}` på precis samma sätt och alla rader ska avslutas med ett `;`. Det finns dock några specifika grejer som främst gäller datatyper och jämförelser som kan vara lite annorlunda. Sådana grejer ska jag fokusera lite mer på medan enklare syntaxkonstruktioner (såsom `if`-satser, loopar och enkla definitioner av funktioner) kommer jag att nämna väldigt kort.
 
 ^^^^Angående semikolon
-Egentligen finns det en mekanism som kallas ASI (automatic semicolon insertion) som gör att man **kan** skippa `;` i JavaScript. Dock är det **dålig praxis**, eftersom man kan få ett oväntat resultat. Du kan läsa mer om hur ASI fungerar här:
+Egentligen finns det en mekanism som kallas ASI (automatic semicolon insertion) som gör att man **kan** hoppa över `;` i JavaScript. Dock är det **dålig praxis**, eftersom man kan få ett oväntat resultat. Du kan läsa mer om hur ASI fungerar här:
 
 > [Exploring JavaScript - Automatic Semicolon Insertion](https://witch.work/en/posts/javascript-semicolon-insertion) `Witch-Work`
 
@@ -25,7 +25,7 @@ Det är alltså innehållet inom parenteserna efter `console.log` som ska skriva
 
 ## Variabler och datatyper
 
-JavaScript är ett dynamiskt typat språk, vilket innebär att man inte anger datatyper på variabler, utan dessa bestäms vid körning baserat på de värden som lagras i variablerna.
+JavaScript är ett dynamiskt typat språk, vilket innebär att man inte anger datatyper för variabler, utan att de bestäms vid körning baserat på de värden som lagras i variablerna.
 
 Variabler i JavaScript kan deklareras med tre olika nyckelord, beroende på vilket beteende du vill uppnå. Det sätt som liknar hur variablerna fungerar i de flesta andra programmeringsspråk är att använda nyckelordet `let`:
 
@@ -358,6 +358,24 @@ console.log(add(5, 9));
 
 // output:
 // 14
+```
+
+---
+
+## Felhantering
+
+I JavaScript kan man såklart hantera fel som kastas ut:
+
+```javascript
+try {
+    // koden som kan orsaka runtime exception
+    throw new Error();
+} catch (e) {
+    console.log("An error occured: " + e.toString());
+} finally {
+    // koden som exekveras oavsett om 
+    // exception har kastas ut eller inte
+}
 ```
 
 ---
