@@ -374,7 +374,7 @@ try {
     console.log("An error occured: " + e.toString());
 } finally {
     // koden som exekveras oavsett om 
-    // exception har kastas ut eller inte
+    // exception har kastats ut eller inte
 }
 ```
 
