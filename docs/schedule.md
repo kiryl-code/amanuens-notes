@@ -5,9 +5,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Modul/moment/koncept                       | Preliminär vecka |
 |--------------------------------------------|------------------|
 | **Manipulera sidan med JS:**               | v. 48            |
-| Manipulera innehållet                      |                  |
-| Skapa, ta bort och ändra element           |                  |
-| Callbacks och lambda-funktioner            |                  |
 | Events                                     |                  |
 | Kontextbindning                            |                  |
 | Persistens i webbläsaren                   |                  |
