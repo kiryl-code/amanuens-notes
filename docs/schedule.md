@@ -5,8 +5,6 @@ Vissa sidor är fortfarande under utveckling och kommer att publiceras allt efte
 | Modul/moment/koncept                       | Preliminär vecka |
 |--------------------------------------------|------------------|
 | **Manipulera sidan med JS:**               | v. 48            |
-| Events                                     |                  |
-| Kontextbindning                            |                  |
 | Persistens i webbläsaren                   |                  |
 | **Strukturerade dataformat**               | v. 50            |
 | **Avancerad JavaScript:**                  | v. 50            |
