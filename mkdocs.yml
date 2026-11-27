@@ -65,6 +65,7 @@ nav:
         - "Manipulera HTML element med JavaScript": javascript/manipulate-elements.md
         - "Manipulera DOM med JavaScript": javascript/manipulate-dom.md
         - "Callbacks, anonyma funktioner och lambda": "javascript/callbacks-and-lambda.md"
+        - "Events": javascript/events.md
 markdown_extensions:
   - markdown_extension
   - fenced_code
