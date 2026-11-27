@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exempelquiz</title>
+    <script>
+        function syncThemeAttributes() {
+            if (window.parent === window) return;
+            const parentDoc = window.parent.document;
+            const source = parentDoc.body || parentDoc.documentElement;
+            if (!source) return;
+
+            for (const attr of source.attributes) {
+                if (attr.name.startsWith("data-md-")) {
+                    document.documentElement.setAttribute(attr.name, attr.value);
+                    if (document.body) {
+                        document.body.setAttribute(attr.name, attr.value);
+                    }
+                }
+            }
+        }
+
+        function getParentStyleSheet () {
+            if (window.parent === window) return;
+
+            try {
+                document.querySelector("#standalone_style").remove();
+                const parentDoc = window.parent.document;
+                parentDoc.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
+                    const clone = document.createElement("link");
+                    clone.rel = "stylesheet";
+                    clone.href = link.href;
+                    document.head.appendChild(clone);
+                });
+
+                const observer = new MutationObserver(syncThemeAttributes);
+                observer.observe(parentDoc.documentElement, {
+                    attributes: true,
+                    subtree: true,
+                    attributeFilter: ["data-md-color-scheme", "data-md-color-primary", "data-md-color-accent"]
+                });
+            } catch (e) {}
+        }
+        document.addEventListener("DOMContentLoaded", getParentStyleSheet);
+        document.addEventListener("DOMContentLoaded", syncThemeAttributes);
+    </script>
+
+    <script src="../_engine/exercises/main.js" type="module"></script>
+    <link rel="stylesheet" href="../_engine/exercises/styles/main-standalone.css" id="standalone_style">
+    <link rel="stylesheet" href="../_engine/exercises/styles/main.css">
+    <link rel="stylesheet" href="../_engine/stylesheets/darcula.css">
+    <link rel="stylesheet" href="../_engine/stylesheets/custom_styles.css">
+</head>
+<body class="md-typeset">
+
+    <form action="" data-exercise-type="answerAlternativeExercise">
+        <div class="question-body">
+            <p>Välj det korrekta alternativet och tryck sedan på "Kontrollera"</p>
+        </div>
+        
+          
+            <div class="alternative">
+                <label for="q1_answer1">
+                  <input type="radio"
+                         id="q1_answer1"
+                         name="question1"
+                         class="answer correct">
+                  Korrekt alternativ
+                </label>
+            </div>
+          
+            <div class="alternative">
+                <label for="q1_answer2">
+                  <input type="radio"
+                         id="q1_answer2"
+                         name="question1"
+                         class="answer ">
+                  Fel alternativ
+                </label>
+            </div>
+          
+        
+        <div class="explanations">
+            <p class="resultCorrect hidden">Korrekt!</p>
+            <p class="resultIncorrect hidden">Inte riktigt...</p>
+            
+            <div class="explanationCorrect hidden">
+                <p>Du fattar hur det funkar. Bra! 😎</p>
+            </div>
+            
+            
+            <div class="explanationIncorrect hidden">
+                <p>Du skulle ju välja ett korrekt alternativ... 🫤</p>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <button type="submit">Kontrollera</button>
+            <button type="reset">Återställ</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

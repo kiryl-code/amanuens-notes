@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid template column span med etiketter - demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        header, nav, main, footer {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header, footer {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <header><h2>Header</h2></header>
+    <nav><h2>Nav</h2></nav>
+    <main><h2>Main</h2></main>
+    <footer><h2>Footer</h2></footer>
+</body>
+</html>
